@@ -1,0 +1,31 @@
+.info-educacion li a img{
+  height: 64px;
+  width: 64px;
+  margin: right 8px;
+  
+}
+.info-educacion li a{
+  color:black;
+  display:flex;
+  text-decoration: none;
+}
+.info-educacion li p{
+  color:black;
+  display:flex;
+  text-decoration: none;
+}
+
+.certificados{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+#info-educacion li a h2{
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-self: center;
+  vertical-align: baseline;
+  
+} 

@@ -9,6 +9,8 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { PublicidadComponent } from './componentes/publicidad/publicidad.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { PublicidadComponent } from './componentes/publicidad/publicidad.compone
     EducacionComponent,
     SkillsComponent,
     ProyectosComponent,
-    PublicidadComponent
+    PublicidadComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

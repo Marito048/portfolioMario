@@ -1,0 +1,155 @@
+
+.box-skills {
+
+  border-radius: 32px;
+  background: #c2c2c9;
+  box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.63);
+  padding: 60px;
+  margin: auto 0;
+}
+  
+    .master-skills {
+      
+      
+      font-family: sans-serif;
+      
+      justify-content: center;
+      height: 100vh;
+      background: #0d0c2d;
+    }
+    
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(1, 160px);
+      grid-gap: 80px;
+      background: #0d0c2d;
+      box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+                  4px 4px 6px rgba(94, 104, 121, 0.288);
+      padding: 60px;
+      margin: auto 0;
+    }
+    
+  .skills .box {
+    width: 100%;
+  }
+  
+  .skills .box h2 {
+    display: box;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .skills .box .chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 160px;
+    height: 160px;
+    color: #fff;
+  }
+  
+  .skills .box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+  }
+
+.wrapper{
+  margin-top: 10px;
+  /*background-image:  url(/images/pared_Skills2.jpg);*/
+  
+}
+
+.progressbar:not svg,
+.progressbar:not(.circle) svg path{
+  border-radius: 20px;
+}
+
+.progressbar svg path:first-child{
+  stroke: rgba(var(--rgb-black), 0.09);
+}
+
+
+
+.progressbar.border{
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+
+.progressbar.border svg path:first-child{
+  stroke: transparent;
+}
+
+
+.progressbar.line svg{
+  height: 10px;
+}
+
+
+.progressbar.line.border svg{
+  height: 8px;
+}
+
+
+
+
+.progressbar.circle{
+  position: relative;
+  margin: 0 auto 30px;
+  width: 170px;
+  height: 85px;
+}
+
+
+.progressbar.circle .progressbar-text{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-size: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: slateblue !important;
+  font-weight: bold;
+}
+
+.progressbar.circle .progressbar-text:after{
+  content: "%";
+  display: block;
+  font-size: 20px;
+  padding-left: 2px;
+}
+
+
+.progressbar.red svg path:last-child{
+  stroke: var(--color-red)
+  
+}
+
+
+
+.progressbar.blue svg path:last-child{
+  stroke: var(--color-blue)
+  
+}
+
+
+
+.progressbar.green svg path:last-child{
+  stroke: var(--color-green)
+  
+}
+
+
+.progressbar.yellow svg path:last-child{
+  stroke: var(--color-yellow)
+  
+}
