@@ -11,6 +11,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { PublicidadComponent } from './componentes/publicidad/publicidad.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,16 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#37688b",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
