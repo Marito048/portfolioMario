@@ -117,32 +117,28 @@
   
 }
 .login {
-  background: transparent;
-  padding: 1px;
-  margin: 1px;
-  width: 12%;
-  border-radius: var(--border-radius) ;
-  border: 2px solid var(--color-menu);
-  font-size: 17px;
-  text-align: center;
-  margin-top: 0px;
+  
+  
+  width: 8%;
+  
   
 }
-    .login a {
+
+    /*.login a {
       color:var(--color-menu);
       text-decoration: none;
 
-    }
-    .login a:hover, .login:hover{
+    }*/
+    /*.login a:hover, .login:hover{
       color: var(--color-menu-hover); 
       
-    }
-    .login:hover{
+    }/*
+    /*.login:hover{
       color: var(--color-menu-hover);
       border-radius: var(--border-radius) ;
       border: 2px solid var(--color-menu-hover );
       
-    }
+    }*/
 
 .icono-social{
   color: var(--color-menu);

@@ -1,121 +1,129 @@
 <div class=" card mat-card">
   <h2>HABILIDADES</h2>
   <div class="row">
-    <h4>DURAS</h4>
+    <h4 class="text-center">DURAS</h4>
     <div class="col text-center">
-      <circle-progress
+      <circle-progress class="skills"
         [backgroundGradient]=true
-        [percent]="85"
+        [percent]="15"
         [radius]="60"
         [outerStrokeWidth]="8"
         [innerStrokeWidth]="0"
         [animation]="true"
         [animationDuration]="1500"
         [backgroundOpacity]=".6"
-        [backgroundPadding]= "-5">
+        [backgroundPadding]= "-5"
+        [lazy]=true>
       </circle-progress>
-      <h6 class="skill">HTML/CSS</h6>
+      <h6>{{skills.caracteristica}}</h6>
+       <p>Manejo de Enmaquetado HTML, creacion de estilos CSS, BOOTSTRAP responsive. </p>
     </div>
     <div class="col text-center">
       <circle-progress
       [backgroundGradient]=true
-      [percent]="85"
+      [percent]="15"
       [radius]="60"
       [outerStrokeWidth]="8"
       [innerStrokeWidth]="0"
       [animation]="true"
       [animationDuration]="1500"
       [backgroundOpacity]=".6"
-      [backgroundPadding]= "-5">
+      [backgroundPadding]= "-5"
+      [lazy]=true>
       </circle-progress>  
       <h6>JAVASCRIPT/TYPESCRIPT</h6>
     </div>
     <div class="col text-center">
       <circle-progress
-        [percent]="5"
-        [radius]="60"
-        [outerStrokeWidth]="8"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78Cfff'"
-        [innerStrokeColor]="'#f9E596'"
-        [animation]="true"
-        [animationDuration]="1500"
-        [backgroundOpacity]="1"
-        [backgroundPadding]= "6">
-      </circle-progress>
-      <h6>ANGULAR</h6>
-    </div>
-    <div class="col text-center">
-      <circle-progress
-        [percent]="5"
-        [radius]="60"
-        [outerStrokeWidth]="8"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78Cfff'"
-        [innerStrokeColor]="'#f9E596'"
-        [animation]="true"
-        [animationDuration]="1500"
-        [backgroundOpacity]="1"
-        [backgroundPadding]= "6">
-      </circle-progress>
-      <h6>BASE DE DATOS</h6>
-    </div>
-  </div>
-  <div class="row">
-    <h4>BLANDAS</h4>
-    <div class="col text-center">
-      <circle-progress
-        [percent]="85"
-        [radius]="60"
-        [outerStrokeWidth]="8"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78Cfff'"
-        [innerStrokeColor]="'#f9E596'"
-        [animation]="true"
-        [animationDuration]="1500"
-        [backgroundOpacity]="1"
-        [backgroundPadding]= "6">
-      </circle-progress>
-    </div>
-    <div class="col text-center">
-      <circle-progress
         [backgroundGradient]=true
-        [percent]="85"
+        [percent]="58"
         [radius]="60"
         [outerStrokeWidth]="8"
         [innerStrokeWidth]="0"
         [animation]="true"
         [animationDuration]="1500"
         [backgroundOpacity]=".6"
-        [backgroundPadding]= "-5">
-      </circle-progress>  
-    </div>
-    <div class="col text-center">
-      <circle-progress
-        [percent]="85"
-        [radius]="60"
-        [outerStrokeWidth]="8"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78Cfff'"
-        [innerStrokeColor]="'#f9E596'"
-        [animation]="true"
-        [animationDuration]="1500"
-        [backgroundOpacity]="1"
-        [backgroundPadding]= "6">
+        [backgroundPadding]= "-5"
+        [lazy]=true>
       </circle-progress>
+      <h6>ANGULAR</h6>
     </div>
     <div class="col text-center">
       <circle-progress
-        [percent]="85"
+        [backgroundGradient]=true
+        [percent]="15"
         [radius]="60"
         [outerStrokeWidth]="8"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78Cfff'"
-        [innerStrokeColor]="'#f9E596'"
+        [innerStrokeWidth]="0"
         [animation]="true"
         [animationDuration]="1500"
-        [backgroundOpacity]="1"
-        [backgroundPadding]= "6">
+        [backgroundOpacity]=".6"
+        [backgroundPadding]= "-5"
+        [lazy]=true>
+      </circle-progress>
+      <h6>BASE DE DATOS</h6>
+    </div>
+  </div>
+  <!--------------BLANDAS-------------->
+  <div class="row text-center">
+    <h4>BLANDAS</h4>
+    <div class="col">
+      <circle-progress
+      [backgroundGradient]=true
+      [percent]="15"
+      [radius]="60"
+      [outerStrokeWidth]="8"
+      [innerStrokeWidth]="0"
+      [animation]="true"
+      [animationDuration]="1500"
+      [backgroundOpacity]=".6"
+      [backgroundPadding]= "-5"
+      [lazy]=true>
+      </circle-progress>
+      <h6>Trabajo en Equipo</h6>
+    </div>
+    <div class="col text-center">
+      <circle-progress
+        [backgroundGradient]=true
+        [percent]="15"
+        [radius]="60"
+        [outerStrokeWidth]="8"
+        [innerStrokeWidth]="0"
+        [animation]="true"
+        [animationDuration]="1500"
+        [backgroundOpacity]=".6"
+        [backgroundPadding]= "-5"
+        [lazy]=true>
+      </circle-progress> 
+      <h6>Compañerismo</h6> 
+    </div>
+    <div class="col text-center">
+      <circle-progress
+        [backgroundGradient]=true
+        [percent]="15"
+        [radius]="60"
+        [outerStrokeWidth]="8"
+        [innerStrokeWidth]="0"
+        [animation]="true"
+        [animationDuration]="1500"
+        [backgroundOpacity]=".6"
+        [backgroundPadding]= "-5"
+        [lazy]=true>
+      </circle-progress>
+      <h6>Resolucion de Conflictos</h6>
+    </div>
+    <div class="col text-center">
+      <circle-progress
+        [backgroundGradient]=true
+        [percent]="15"
+        [radius]="60"
+        [outerStrokeWidth]="8"
+        [innerStrokeWidth]="0"
+        [animation]="true"
+        [animationDuration]="1500"
+        [backgroundOpacity]=".6"
+        [backgroundPadding]= "-5"
+        [lazy]=true>
       </circle-progress>
     </div>
   </div>
@@ -123,5 +131,5 @@
 
 
 
-
+ 
   

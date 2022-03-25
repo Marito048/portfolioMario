@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SKILL} from '../../mock-skills';
-import { skills } from 'src/app/skills';
+import {Skill} from 'src/app/skill';
+
 
 
 @Component({
@@ -9,14 +9,15 @@ import { skills } from 'src/app/skills';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills=SKILL;
-  selectedSkill?:skills;
-  constructor(){} 
-  ngOnInit():void{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  skills:Skill ={
+    id:1, 
+    porcentaje:85, 
+    caracteristica:"HTML"
+  }
+  constructor() { }
 
-  } 
-  onSelect (skill:skills):void{
-    this.selectedSkill=skill;
-  } 
 
-}
+  }
