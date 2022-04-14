@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,16 +38,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     
     NgCircleProgressModule.forRoot({
-      // set defaults here
-      radius: 100,
-      outerStrokeWidth: 16,
-      innerStrokeWidth: 8,
-      outerStrokeColor: "#37688b",
-      innerStrokeColor: "#C7E596",
-      animationDuration: 300,
-      
-      
+      "backgroundGradient": true,
+      "backgroundColor": "#ffffff",
+      "backgroundGradientStopColor": "#7f7676",
+      "backgroundPadding": -10,
+      "radius": 60,
+      "maxPercent": 100,
+      "outerStrokeWidth": 10,
+      "outerStrokeColor": "#1ca6a3",
+      "innerStrokeWidth": 0,
+      "subtitleColor": "#444444",
+      "showInnerStroke": false,
+      "responsive": false,
+      "startFromZero": false,
+      "lazy": true
     }),
+  
     BrowserAnimationsModule,
     AppRoutingModule
   ],

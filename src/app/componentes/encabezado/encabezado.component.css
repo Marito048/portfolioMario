@@ -45,13 +45,13 @@
 	flex-flow:row nowrap;
 	/*width: 400px;  */
   height: 80px;
-	align-items: center;  
+	align-items: center;
 	border-radius:var(--border-radius);
 	/*border-bottom: 1px solid rgba(255,255,255,.1);*/
   margin: 10px;
   z-index: 1;
-  
-    
+
+
 }
 #info-actions {
   display: flex;
@@ -83,11 +83,11 @@
   flex: 3 1 left;
   margin-top: 0px;
   color:var(--color-menu);
-} 
+}
   .logo a{
     color:var(--color-menu);
     text-decoration: none;
-  
+
   }
     .logo a:hover{
       color: var(--color-menu-hover);
@@ -112,16 +112,16 @@
   font-size: 17px;
   text-align: center;
   margin-top: 0px;
-  
-  
-  
+
+
+
 }
 .login {
-  
-  
+
+
   width: 8%;
-  
-  
+
+
 }
 
     /*.login a {
@@ -130,14 +130,14 @@
 
     }*/
     /*.login a:hover, .login:hover{
-      color: var(--color-menu-hover); 
-      
+      color: var(--color-menu-hover);
+
     }/*
     /*.login:hover{
       color: var(--color-menu-hover);
       border-radius: var(--border-radius) ;
       border: 2px solid var(--color-menu-hover );
-      
+
     }*/
 
 .icono-social{
