@@ -13,7 +13,7 @@ import { PublicidadComponent } from './componentes/publicidad/publicidad.compone
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,13 +30,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PublicidadComponent,
     LoginComponent
 
-  
+
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    
+    HttpClientModule,
+
     NgCircleProgressModule.forRoot({
       "backgroundGradient": true,
       "backgroundColor": "#ffffff",
@@ -53,7 +54,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       "startFromZero": false,
       "lazy": true
     }),
-  
+
     BrowserAnimationsModule,
     AppRoutingModule
   ],

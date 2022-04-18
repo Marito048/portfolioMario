@@ -1,0 +1,30 @@
+{"persona":{
+            "id_persona":1,
+            "nombre_persona":"Mario Felix",
+            "apellido_persona":"Garcia Irastorza",
+            "telefono_persona":"+54-2302-443813",
+            "email_persona":"estudio1802@gmail.com",
+            "titulo_persona":"FullStack Developer Jr. -PONELE QUE LLEGUE-",
+            "foto_persona":"https://i.imgur.com/klAhrK9.jpg",
+            "banner_persona":"https://i.imgur.com/P8KkLBq.jpg",
+            "acercade_persona":"Aca estoy, subiendo webadas a la red...",
+            "ubucacion_persona":"General Pico-La Pampa"
+           },
+  "educacion":[{"id_educacion":1,
+                "institucion_educacion":"UNLPam",
+                "ingreso_educacion":"1997-02-01",
+                "egreso_educacion":"2022-04-02",
+                "titulo_educacion":"Analista Programador -en curso-",
+                "detalles_educacion":null},
+               {"id_educacion":2,
+                "institucion_educacion":"E.P.E.T. N° 8",
+                "ingreso_educacion":"1991-02-01",
+                "egreso_educacion":"1996-12-01",
+                "titulo_educacion":"PERITO EN TECNOLOGIA",
+                "detalles_educacion":"MEJOR ALUMNO TALLER\r\nMEJOR PROMEDIO ESCOLAR 1995 Y 1996"
+                }
+              ]
+}
+
+
+
