@@ -5,9 +5,9 @@ import { RouterModule,Routes } from '@angular/router';
 
 
 const routes: Routes =[
-  {path: '', component: AppComponent, pathMatch: "full"},
-  
-  
+  {path: '/login', component: AppComponent, pathMatch: "full"},
+
+
 ];
 
 @NgModule({
@@ -15,7 +15,7 @@ const routes: Routes =[
   imports: [
     CommonModule
   ]
-  
+
 })
 
 
