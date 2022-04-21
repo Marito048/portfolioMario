@@ -13,8 +13,8 @@ export class SkillsComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
   skills:Skill ={
-    id:1, 
-    porcentaje:85, 
+    id:1,
+    porcentaje:85,
     caracteristica:"HTML"
   }
   constructor() { }

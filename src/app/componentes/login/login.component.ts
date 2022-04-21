@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -8,15 +9,22 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   title = 'bootstrap-popup';
-  loginForm!: FormGroup;
+  loginForm!:FormGroup;
 
-  constructor() { }
+  constructor(private formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
-    this.loginForm = new FormGroup({
-      email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [Validators.required])
-    })
+    this.loginForm =this.formBuilder.group(
+      {
+        email: ['', [Validators.required, Validators.email]],
+        password:  ['', [Validators.required, Validators.minLength(8)]],
+        deviceInfo:this.formBuilder.group({
+          deviceId: ['17867868768'],
+          deviceType: ['DEVICE_TYPE_ANDROID'],
+          notificationToken:['6765757eececc34']
+        })
+
+      });
   }
 
   get emailField(): any {
