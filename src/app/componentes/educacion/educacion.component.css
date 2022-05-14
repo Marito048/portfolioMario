@@ -15,13 +15,7 @@
   text-decoration: none;
 }
 
-.certificados{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: center;
-}
+
 #info-educacion li a h2{
   font-size: 1.2rem;
   font-weight: 500;

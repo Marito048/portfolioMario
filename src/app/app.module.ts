@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { CertificadosComponent } from './componentes/certificados/certificados.component';
 
 
 
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     SkillsComponent,
     ProyectosComponent,
     PublicidadComponent,
-    LoginComponent
+    LoginComponent,
+    CertificadosComponent
 
 
   ],
