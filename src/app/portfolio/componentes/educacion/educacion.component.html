@@ -1,0 +1,76 @@
+<div class="educacion m-3">
+  <h1>EDUCACION </h1>
+<app-add-button *ngIf="isLoggedIn()"></app-add-button>
+  <br>
+  <br>
+  <div class="card mb-3" style="max-width: 540px;" *ngFor="let Edu of educacion">
+    <p class="card-text">{{Edu.titulo_educacion}}</p>
+    
+    <div class="d-flex">
+      <div class="col-md-4">
+        <img [src]="Edu.logo_educacion" class="img-fluid rounded-start" alt="imagen1">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body"> 
+        <div class="d-flex justify-content-between">
+          <h5 class="card-title">{{Edu.titulo_educacion}} </h5>
+            <div>
+              <app-edit-button *ngIf="isLoggedIn()" (click)="abrirModal(Edu.id_educacion)" class="me-2"></app-edit-button>   <app-delete-button *ngIf="isLoggedIn()"></app-delete-button>
+            </div>            
+        </div>            
+          <p class="card-text">{{Edu.institucion_educacion}}</p>
+          <p class="card-text">{{Edu.logo_educacion}}</p>
+          <p class="card-text">{{Edu.ingreso_educacion}}</p>
+        </div>  
+    </div>
+  </div>
+  </div>
+
+
+
+
+<!-- Educacion
+<div class="card mat-card"> 
+  <div class="card-titles">
+    <h2>Educacion</h2> 
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right">
+        <i class="fa fa-pen"> </i>	
+      </a>
+    </div>
+    <div class="info-educacion">
+      <ul>
+        <li>
+          <div class="btn-edit" onclick="cambiar_parrafo()">
+            <a href="#" class="btn-right">
+            <i class="fa fa-pen"> </i>	
+            </a>
+              <a href="#">
+              <img src="../assets/img/logoEpet.jpeg" alt="FUCE">
+              <h2> E.P.E.T. N° 8-</h2> </a>
+              <p>Graduado como Perito en Tecnologia. 1990-1996</p>
+            
+          </div>
+        </li>
+        <hr>	
+        <li>
+          <div class="btn-edit" onclick="cambiar_parrafo()">
+            <a href="#" class="btn-right">
+              <i class="fa fa-pen"> </i>	
+            </a>
+            <a href="#">
+              <img src="../assets/img/logo unlpam.jpg" alt="">
+              <h2> Universidad Nacional de la Pampa</h2>
+            </a>
+            <p>Cursando la Carrera Analista PRogramador.</p>
+              
+          </div>
+        </li>
+        </ul>
+        <hr>
+        
+        
+    </div>
+  </div>
+</div> -->
+

@@ -1,20 +1,24 @@
-import { LoginComponent } from './componentes/login/login.component';
+import { PortfolioComponent } from '../app/portfolio/portfolio.component';
+import { LoginComponent } from '../app/portfolio/componentes/login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
-import { AcercaComponent } from './componentes/acerca/acerca.component';
-import { LaboralComponent } from './componentes/laboral/laboral.component';
-import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { SkillsComponent } from './componentes/skills/skills.component';
-import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
-import { PublicidadComponent } from './componentes/publicidad/publicidad.component';
+import { EncabezadoComponent } from '../app/portfolio/componentes/encabezado/encabezado.component';
+import { AcercaComponent } from '../app/portfolio/componentes/acerca/acerca.component';
+import { LaboralComponent } from '../app/portfolio/componentes/laboral/laboral.component';
+import { EducacionComponent } from '../app/portfolio/componentes/educacion/educacion.component';
+import { SkillsComponent } from '../app/portfolio/componentes/skills/skills.component';
+import { ProyectosComponent } from '../app/portfolio/componentes/proyectos/proyectos.component';
+import { PublicidadComponent } from '../app/portfolio/componentes/publicidad/publicidad.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { CertificadosComponent } from './componentes/certificados/certificados.component';
+import { CertificadosComponent } from '../app/portfolio/componentes/certificados/certificados.component';
+import { AddButtonComponent } from '../app/portfolio/componentes/botones/add-button/add-button.component';
+import { EditButtonComponent } from '../app/portfolio/componentes/botones/edit-button/edit-button.component';
+import { DeleteButtonComponent } from '../app/portfolio/componentes/botones/delete-button/delete-button.component';
 
 
 
@@ -22,6 +26,7 @@ import { CertificadosComponent } from './componentes/certificados/certificados.c
 @NgModule({
   declarations: [
     AppComponent,
+    PortfolioComponent,
     EncabezadoComponent,
     AcercaComponent,
     LaboralComponent,
@@ -30,7 +35,10 @@ import { CertificadosComponent } from './componentes/certificados/certificados.c
     ProyectosComponent,
     PublicidadComponent,
     LoginComponent,
-    CertificadosComponent
+    CertificadosComponent,
+    AddButtonComponent,
+    EditButtonComponent,
+    DeleteButtonComponent
 
 
   ],
@@ -52,7 +60,7 @@ import { CertificadosComponent } from './componentes/certificados/certificados.c
       "innerStrokeWidth": 0,
       "subtitleColor": "#444444",
       "showInnerStroke": false,
-      "responsive": false,
+      "responsive": true,
       "startFromZero": false,
       "lazy": true
     }),

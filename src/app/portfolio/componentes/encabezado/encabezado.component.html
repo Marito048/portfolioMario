@@ -1,0 +1,75 @@
+<a routerLink="../encabezado"></a>
+  <div class="banner card mat-card">
+    <!-- MENU ENCABEZADO-->
+    <div class="menu mat-card">
+      <!--LOGOArPr-->
+      <div class="logo">
+        <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank" rel="noopener"> <img src="../assets/img/LogoArPr.png" weigth="20" height="20"> Argentina Programa</a>
+      </div>
+      <!--RELLENO-->
+      <div class="relleno"></div>
+      <!--SOCIAL-->
+      <div class="social">
+        <!-- GITHUB-->
+        <a href="https://github.com/Marito048" target="_blank" rel="noopener"> <i class="icono-social fa-brands fa-github fa-lg"></i></a>
+        <!-- FACEBOOK-->
+        <a href="https://www.facebook.com/gpseguridad.gpseguimiento.7/" target="blank" rel="noopener"> <i class="icono-social fa-brands fa-facebook fa-lg"></i></a>
+        <!-- INSTAGRAM-->
+        <a href="https://www.instagram.com/mario.garcia.irastorza/" target="blank" rel="noopener"> <i class="icono-social fa-brands fa-instagram fa-lg"></i></a>
+        <!--LINKEDIN-->
+        <a href="https://www.instagram.com/mario.garcia.irastorza/" target="blank" rel="noopener"> <i class="icono-social fa-brands fa-linkedin fa-lg"></i></a>
+
+      </div>
+      <!--LOGIN-->
+      <div class="login card ">
+        <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#logear">Login</button>
+
+      </div>
+
+    </div>
+    <!--BANNER-PROFILE-->
+    <div class="banner"id="profile-background"><img src="../assets/img/banner2.jpg"  alt="Banner"></div>
+    <div id="info" style="padding: 16px">
+      <div id="info-img">
+        <img url="Persona.banner_persona"  alt="imagen de perfil" class="profile-image">
+
+        <div class="detalles">
+          <div id="data-details">
+            <div id="info-data">
+          <div>
+            <h2>{{datosPortfolio.persona.nombre_persona + ' ' + datosPortfolio.persona.apellido_persona}}</h2>
+            <!--<div id="info-company">Empleado Poder Judicial</div>-->
+            <div id="info-contacto">
+              <span>{{datosPortfolio.persona.ubucacion_persona}}</span>
+              <span><a href="#">Informacion de Contacto</a></span>
+            </div>
+          </div>
+            </div>
+            <div	id="info-det">
+              <ul id="info-details">
+                <li>
+                  <a href="#">
+                    <img src="../assets/img/fullstack.png"  alt="">
+                    <h2>Full Stack Developer Jr.</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="../assets/img/logo unlpam.jpg"  alt="">
+                    <h2>Universidad Nacional de La Pampa -Analista Programador en Curso</h2>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="info-actions">
+            <button type="button" class="btn btn-primary"> Tengo Interes en...</button>
+            <button type="button" class="btn btn-light"> Añadir Seccion</button>
+            <button type="button" class="btn btn-light"> Mas</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
